@@ -1,0 +1,19 @@
+@use '../common/common.scss' as *;
+
+.box {
+  border: solid 1px map-get($colors, 'gray');
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  box-sizing: border-box;
+
+  &--white {
+  background-color: map-get($colors, 'white');
+  }
+
+  &--gray {
+  background-color: map-get($colors, 'gray');
+  }
+}

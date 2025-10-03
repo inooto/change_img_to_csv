@@ -1,0 +1,13 @@
+@use '../common/common.scss' as *;
+
+.background {
+  height: 100svh;
+
+  &--white {
+    background-color: map-get($colors, 'white');
+  }
+  &--gray {
+    background-color: map-get($colors, 'background-gray');
+  }
+
+}

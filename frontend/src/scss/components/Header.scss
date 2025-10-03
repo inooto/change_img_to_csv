@@ -1,0 +1,28 @@
+@use '../common/common.scss' as *;
+
+.header {
+  height: 100px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 10px map-get($colors, 'gray');
+  background-color: map-get($colors, 'white');
+
+  &--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__main {
+      font-size: map-get($font-size, 'l');
+      font-weight: bold;
+    }
+
+    &__sub {
+      font-size: map-get($font-size, 's');
+      color: map-get($colors, 'dark-gray');
+    }
+  }
+}
