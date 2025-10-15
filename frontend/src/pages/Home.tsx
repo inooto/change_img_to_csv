@@ -1,11 +1,10 @@
-import React from 'react';
-import { Header } from './components/header';
-import { Footer } from './components/footer';
-import { Background } from './components/background';
-import { ColumnBox } from './components/columnBox';
-import Camera from './assets/Camera.svg';
-import Upload from './assets/Upload.svg';
-import './scss/Home.scss';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
+import { Background } from '../components/background';
+import { ColumnBox } from '../components/columnBox';
+import Camera from '../assets/Camera.svg';
+import Upload from '../assets/Upload.svg';
+import '../scss/pages/Home.scss';
 
 export const Home = () => {
   return (
@@ -15,8 +14,6 @@ export const Home = () => {
       <Header
       mainText='原材料読み取り'
       subText='写真から原材料をCSVに変換'
-      showBack={false}
-      showMore={false}
       />
 
       <div className='home-body'>

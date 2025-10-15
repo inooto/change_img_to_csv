@@ -1,0 +1,47 @@
+@use '../../common/common.scss' as *;
+
+.main-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+
+  &--save {
+    background-color: map-get($colors, 'green');
+    > p {
+    color: map-get($colors, 'white');
+    }
+  }
+
+  &--delete {
+    border: 1px solid map-get($colors, 'gray');
+    > p{
+      color: map-get($colors, 'red');
+    }
+  }
+
+  &--change {
+    border: 1px solid map-get($colors, 'gray');
+    > p {
+      color: map-get($colors, 'blue');
+    }
+  }
+  > p {
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: map-get($font-size, 'm');
+  }
+
+  &--cancel {
+    border: 1px solid map-get($colors, 'gray');
+    > p {
+      color: map-get($colors, 'dark-gray');
+    }
+  }
+
+  &--alert {
+    background-color: map-get($colors, 'red');
+    color: map-get($colors, 'white');
+  }
+}

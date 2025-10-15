@@ -1,0 +1,29 @@
+@use '../common/common.scss' as *;
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: map-get($colors, 'white');
+  border: 1px solid map-get($colors, 'gray');
+  border-radius: 8px;
+  width: 90%;
+  padding: 8px 16px;
+  box-sizing: border-box;
+
+  &--title {
+    font-size: map-get($font-size, 'm');
+    font-weight: bold;
+    margin: 0 0 4px 0;
+  }
+
+  &--buttom {
+    display: flex;
+    align-items: center;
+    color: map-get($colors, 'dark-gray');
+    
+    > p {
+      margin: 0;
+    }
+  }
+}

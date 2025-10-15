@@ -1,27 +1,28 @@
-import { useNavigate } from 'react-router-dom';
 import BackButton from '../assets/BackButton.svg';
 import '../scss/components/Header.scss';
 
 export type HeaderProps = {
   mainText: string,
   subText?: string,
-  showBack: boolean
-  showMore: boolean
+  showBack?: boolean,
+  showMore?: boolean,
+  handleClick?: () => void,
 };
 
 export const Header = (props: HeaderProps) => {
-  const { mainText, subText, showBack, showMore} = props;
-
-  const navigate = useNavigate();
-  const clickBack = () => {
-    navigate(-1);
-  };
+  const {
+    mainText,
+    subText,
+    showBack=false,
+    showMore=false,
+    handleClick,
+  } = props;
 
   return (
     <header className="header">
       <div>
         {showBack && (
-          <button onClick={clickBack}><img src={BackButton} alt='back-button-icon' /></button>
+          <button onClick={handleClick}><img src={BackButton} alt='back-button-icon' /></button>
         )}
       </div>
 

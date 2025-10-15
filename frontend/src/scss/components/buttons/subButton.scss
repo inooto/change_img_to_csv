@@ -1,0 +1,17 @@
+@use '../../common/common.scss' as *;
+
+.sub-button {
+  width: 100%;
+  background-color: map-get($colors, 'blue');
+  color: map-get($colors, 'white');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  > p {
+    font-size: map-get($font-size, 's');
+    font-weight: bold;
+    margin: 8px 0;
+  }
+}

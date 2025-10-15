@@ -1,0 +1,25 @@
+.edit-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--lists {
+    width: 90%;
+    height: 70vh;
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &--buttons {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

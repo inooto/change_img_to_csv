@@ -1,10 +1,15 @@
 $colors: (
   'white': #FFFFFF,
   'black': #1E293B,
+  'transparent-black': rgba(0, 0, 0, 0.5),
   'dark-gray': #94A3B8,
+  'light-gray': #FAFAFA,
   'gray': #E2E8F0,
   'background-gray': #F8FAFC,
-  'blue': #3B82F6
+  'blue': #3B82F6,
+  'red': #EF4444,
+  'light-red': #FEF2F2,
+  'green': #10B981
 );
 
 $font-size: (

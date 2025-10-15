@@ -1,0 +1,30 @@
+@use '../common/common.scss' as *;
+
+.read-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--result-title {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+    &__main-text {
+      font-weight: bold;
+      color: map-get($colors, 'black');
+    }
+
+    &__sub-text {
+      color: map-get($colors, 'dark-gray');
+    }
+  }
+
+  &--buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 90%;
+  }
+}
