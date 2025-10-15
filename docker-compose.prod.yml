@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: FastAPI-app-prod
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "80:8000"
